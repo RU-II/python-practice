@@ -8,7 +8,7 @@ response = requests.get(url)
 response.encoding = response.apparent_encoding
 
 # ファイルを書き込みモードで開いて
-filename = "download.txt"
+filename = "PythonSecondGrader/download.txt"  # パス
 with open(filename, mode="w") as f:
     # ネットから取得した読み込んだデータを書き込む
     f.write(response.text)

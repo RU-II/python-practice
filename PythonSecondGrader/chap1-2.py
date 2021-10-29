@@ -9,7 +9,7 @@ response = requests.get(url)
 response.encoding = 'utf-8'
 
 # ファイルを書き込みモードで開いて
-filename = "download.txt"
+filename = "PythonSecondGrader/download.txt"  # Pythonからの相対パス
 f = open(filename, mode="w")
 
 # ネットから取得した読み込んだデータを書き込んで
