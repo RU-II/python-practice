@@ -10,7 +10,7 @@ html = requests.get(load_url)
 soup = BeautifulSoup(html.content, "html.parser")
 
 # 保存用フォルダを作る
-out_folder = Path("download2")
+out_folder = Path("PythonSecondGrader/download2")
 out_folder.mkdir(exist_ok=True)
 
 # すべてのimgタグを検索し、リンクを取得する

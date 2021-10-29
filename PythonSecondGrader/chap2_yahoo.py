@@ -7,7 +7,8 @@ html = requests.get(load_url)
 soup = BeautifulSoup(html.content, "html.parser")
 
 # classで検索し、その中のすべてのaタグを検索して表示する
-topic = soup.find(class_="sc-DNdyV lbRQVi")
+# aタグはURLリンクのタグ、Webページでは各トピックス名でもありリンクでもある
+topic = soup.find(class_="sc-kDgGX jXOTOw")
 
 for element in topic.find_all("a"):
     print(element.text)
