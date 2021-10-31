@@ -1,0 +1,5 @@
+ japanize-matplotlib のインストール時のエラー
+ ModuleNotFoundError: No module named 'setuptools'
+ python -m pip install -U pip setuptools
+ を打つと解消
+ https://stackoverflow.com/questions/14426491/python-3-importerror-no-module-named-setuptools
