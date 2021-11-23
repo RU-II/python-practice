@@ -20,7 +20,7 @@ url = url.format(cityname=cityname,
 zipcode = "160-0006,JP"
 url = "http://api.openweathermap.org/data/2.5/weather?zip={zipcode}&appid={APIkey}&lang=ja&units=metric"
 url = url.format(zipcode=zipcode,
-                 APIkey="1d72e3eff33467bf9cb6f0ffc62eaf07")
+                 APIkey="#")
 jsondata = requests.get(url).json()
 
 # print(jsondata)
