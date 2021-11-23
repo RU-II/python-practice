@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import japanize_matplotlib
 
 # 5日間（3時間ごと）の天気予報を取得する：東京
-APIkey = "1d72e3eff33467bf9cb6f0ffc62eaf07"
+APIkey = "#"
 url = "http://api.openweathermap.org/data/2.5/forecast?q={cityname}&appid={APIkey}&lang=ja&units=metric"
 cityname = "Tokyo,JP"
 url = url.format(cityname=cityname, APIkey=APIkey)
